@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Button from "../components/Button";
+import About from "../pages/About";
 
 function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -61,34 +62,48 @@ function Home() {
 
           <TalksAbout isOpen={isOpen} />
         </section>
-        <section className="exp lg:mt-20 border-t-2">
-          <div className="about lg:w-3/4 text-center m-auto lg:pt-8">
-            <h2 className="lg:text-center lg:text-3xl">About</h2>
-            <p>
-              I am a dedicated individual with a strong passion for technology
-              who has embarked on a career in the IT field to pursue my lifelong
-              dreams. My journey has been incredibly exciting and fulfilling,
-              especially considering my non-tech background. It is my unwavering
-              interest in this field that has motivated me to take this path. I
-              am currently pursuing a Bachelor's degree in Computer Science at
-              the University of The People, which has been a significant step in
-              my educational and professional journey. I am thrilled with the
-              opportunities this field offers, as it promises a secure and
-              prosperous future. In my current role, I work as a Data Analyst,
-              and I have also honed my skills as a proficient Full Stack
-              Developer, specializing in the MERN tech stack. I am excited about
-              the path ahead and look forward to connecting with like-minded
-              professionals in the LinkedIn community. Thank you for being a
-              part of my journey.
-            </p>
-            <div className="top-skills">
-                
-            </div>
-          </div>
-        </section>
+        <About />
+        <Experience />
       </div>
     </>
   );
+}
+
+function Experience() {
+  return (
+    <div className="exp-wrapper text-center lg:mt-8">
+      <div>
+        <h3 className="text-2xl">Experience</h3>
+      </div>
+      <div className="lg:w-max lg:h-20 m-auto flex justify-center items-center ">
+        <img
+          src="/src/assets/DiceAnalytics.png"
+          alt="company"
+          className="lg:w-14 lg:h-14"
+        />
+        <span>
+          Dice Analytics <span className="text-sm">(1 year 4 months)</span>
+        </span>
+      </div>
+      <CircleIcon />
+      <ExperienceList />
+    </div>
+  );
+}
+
+function ExperienceList() {
+  return (
+    <>
+      <div className="exp-list lg:w-max lg:h-max border-l-2 border-black m-auto lg:ps-4">
+        <div>Frontend</div>
+        <p>full time</p>
+      </div>
+    </>
+  );
+}
+
+function CircleIcon() {
+  return <div className=" round-circle w-3 h-3 rounded-full bg-black"></div>;
 }
 
 function TalksAbout({ isOpen }) {

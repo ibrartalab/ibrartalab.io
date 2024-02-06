@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 body {
-  background-color: #ffffff92;
+  background-color: #a4a4a43d;
   color: #000000;
   font-family: "IBM Plex Sans", sans-serif;
 }
@@ -16,7 +16,6 @@ h1 {
   font-style: italic;
 }
 
-
 .profile-img {
   width: 100%;
   height: 100%;
@@ -24,4 +23,13 @@ h1 {
   object-fit: cover;
   border-radius: 50%;
   background-size: cover;
+}
+.top-skills-list ul li:first-child {
+  list-style: none;
+}
+.top-skills-list ul li {
+  list-style: circle;
+}
+.round-circle {
+  margin-left: 46.6%;
 }

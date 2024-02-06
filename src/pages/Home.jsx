@@ -97,6 +97,7 @@ function ExperienceList() {
       <div className="exp-list lg:w-max lg:h-max border-l-2 border-black m-auto lg:ps-4">
         <div>Frontend</div>
         <p>full time</p>
+        <p></p>
       </div>
     </>
   );

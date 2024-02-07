@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Button from "../components/Button";
 import About from "../pages/About";
+import { IoDiamondSharp } from "react-icons/io5";
 
 function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -63,13 +64,33 @@ function Home() {
           <TalksAbout isOpen={isOpen} />
         </section>
         <About />
-        <Experience />
+        <Experience>
+          <CircleIcon />
+          <ExperienceList
+            title={"Frontend Developer"}
+            duration={"Full-time"}
+            skills={"Html, CSS, Js"}
+          />
+          <CircleIcon />
+          <ExperienceList
+            title={"Frontend Developer"}
+            duration={"Full-time"}
+            skills={"Html, CSS, Js"}
+          />
+          <CircleIcon />
+          <ExperienceList
+            title={"Frontend Developer"}
+            duration={"Full-time"}
+            skills={"Html, CSS, Js"}
+          />
+        </Experience>
       </div>
     </>
   );
 }
 
-function Experience() {
+//Experice for Each company
+function Experience({ children }) {
   return (
     <div className="exp-wrapper text-center lg:mt-8">
       <div>
@@ -85,28 +106,34 @@ function Experience() {
           Dice Analytics <span className="text-sm">(1 year 4 months)</span>
         </span>
       </div>
-      <CircleIcon />
-      <ExperienceList />
+      {children}
     </div>
   );
 }
 
-function ExperienceList() {
+// List of Roles for each company
+function ExperienceList({ title, duration, skills }) {
   return (
     <>
       <div className="exp-list lg:w-max lg:h-max border-l-2 border-black m-auto lg:ps-4">
-        <div>Frontend</div>
-        <p>full time</p>
-        <p></p>
+        <div className="text-lg">{title}</div>
+        <p className="text-left text-sm">{duration}</p>
+        <p className="text-center flex justify-normal items-center gap-2 text-sm">
+          <IoDiamondSharp />
+          <div>{skills}</div>
+        </p>
       </div>
     </>
   );
 }
 
+//Circle icon from career break
 function CircleIcon() {
   return <div className=" round-circle w-3 h-3 rounded-full bg-black"></div>;
 }
 
+
+//Task about box
 function TalksAbout({ isOpen }) {
   return (
     <div

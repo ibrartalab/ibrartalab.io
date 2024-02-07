@@ -4,7 +4,8 @@ function Button({ width = '80px', height = '30px', className, handler, mouseMove
     return (
 
         <button
-            style={{ width: width, height: height }}
+        id="btn"
+            style={{ width: width, height: height,backgroundColor:'#dac3e8',color:'#6247aa'}}
             className={className}
             onClick={handler}
             onMouseOver={mouseMove}

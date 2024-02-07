@@ -101,7 +101,8 @@ function ExperienceList({
     return (
         <>
             <div
-                className={`lg:w-44 border-l-2 border-slate-200 lg:h-40 lg:m-auto relative ${className}`}
+            
+                className={`lg:w-44 border-l-2 border-neutral-900 lg:h-40 lg:m-auto relative ${className}`}
             >
                 <div className="exp-list lg:w-max lg:h-40  m-auto lg:ps-4 absolute lg:-top-7 ">
                     <div className={`text-md font-bold text-start ${nestedClass}`}>

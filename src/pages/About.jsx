@@ -3,7 +3,7 @@ import { IoDiamondSharp } from "react-icons/io5";
 
 function About() {
     return (
-        <section className="exp lg:mt-40 ">
+        <section className="exp lg:mt-40 " style={{ backgroundColor: '' }}>
             <div><h2 className="lg:text-center lg:text-2xl ">About</h2></div>
             <div className="about lg:w-3/4 text-center m-auto lg:pt-8">
 

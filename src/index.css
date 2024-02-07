@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 body {
-  background-color: #a4a4a43d;
+  background-color: #f8f9fa;
   color: #000000;
   font-family: "IBM Plex Sans", sans-serif;
 }
@@ -30,6 +30,22 @@ h1 {
 .top-skills-list ul li {
   list-style: circle;
 }
+
+.banner {
+  /* background-color: #212529; */
+  background-image: url("/src/assets/banner.png");
+  object-fit: cover;
+  background-size: cover;
+}
+.top-skills {
+  background-color: #e9ecef;
+}
 .round-circle {
-  margin-left: 46.6%;
+  background-color: #ced4da;
+}
+.talks-btn {
+  background-color: #343a40;
+}
+.proile-other-content {
+  background-color: #dee2e6;
 }

@@ -1,11 +1,15 @@
-import React, { Children } from 'react'
+
 import Hero from './Hero'
+import NavButtons from '../NavButtons'
 
 function Lyout({children}) {
     return (
         <div className='flex'>
-            <div><Hero/></div>
-            {children}
+            <div style={{height:'100vh'}} className=''><Hero/></div>
+            <div>
+            <NavButtons/>
+            <div>{children}</div>
+            </div>
         </div>
     )
 }

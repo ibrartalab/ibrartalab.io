@@ -1,8 +1,10 @@
 import React from 'react'
 import { IoDiamondSharp } from "react-icons/io5";
+import Lyout from '../components/Lyout/Lyout';
 
 function About() {
     return (
+        <Lyout>
         <section className="exp lg:mt-40 " style={{ backgroundColor: '' }}>
             <div><h2 className="lg:text-center lg:text-2xl ">About</h2></div>
             <div className="about lg:w-3/4 text-center m-auto lg:pt-8">
@@ -41,6 +43,7 @@ function About() {
                 </div>
             </div>
         </section>
+        </Lyout>
     )
 }
 

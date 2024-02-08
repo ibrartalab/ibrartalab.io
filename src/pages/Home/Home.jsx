@@ -1,24 +1,21 @@
-// import { useState } from "react";
-// import Button from "../components/Button";
-// import { AiFillGithub } from "react-icons/ai";
-// import { AiFillLinkedin } from "react-icons/ai";
-// import { Link } from "react-router-dom";
-import About2 from "./About2";
-import Project2 from "./Project2";
-import Work2 from './Work2'
 import Lyout from "../../components/Lyout/Lyout";
+import Work from "../Work";
+import About from "../About";
+import Project from "../Project";
 
-// import GradientShadow from "../components/GradientShadow";
 
 function Home() {
   return (
     <Lyout>
-      <div className="wrapper w-full h-full ">
-        <div style={{height:'80vh'}} className="scrolling lg:w-full  overflow-y-scroll lg:mt-8 lg:rounded-xl">
-        <Work2 />
-          <About2 />
+      <div className="wrapper w-full">
+        <div
+          style={{ height: "70vh"}}
+          className="scrolling lg:w-full  overflow-y-scroll lg:mt-8 lg:rounded-xl "
+        >
+          <Project />
+          <Work />
+          <About />
           
-          <Project2 />
         </div>
       </div>
     </Lyout>
@@ -26,7 +23,6 @@ function Home() {
 }
 
 //Hero section
-
 
 //Talks about
 function TalksAbout({ isOpen }) {

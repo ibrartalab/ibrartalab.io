@@ -1,14 +1,16 @@
 import React from "react";
 import { GoCodeSquare } from "react-icons/go";
 import { AiOutlineCode } from "react-icons/ai";
+import { GrLinkNext } from "react-icons/gr";
+import { NavLink } from "react-router-dom";
 
 function Project() {
     return (
         <>
             <div className="project-wrapper w-full h-80">
-                <div className="text-center text-2xl lg:mt-8">
+                {/* <div className="text-center text-2xl lg:mt-8">
                     <h2>Projects</h2>
-                </div>
+                </div> */}
                 <div className="flex justify-evenly  items-center lg:ps-32 lg:pe-20 lg:mt-12">
                     <ProjectContainer
                         icon={<GoCodeSquare />}
@@ -29,12 +31,18 @@ function Project() {
 function ProjectContainer({ icon, title, count }) {
     return (
         <div
-            className="w-80 h-40 shadow-xl  m-auto rounded-xl p-6"
-            style={{ backgroundColor: "#e9ecef" }}
+            className="w-80 h-48 shadow-xl  m-auto rounded-3xl p-6 bg-white text-black"
         >
-            <div className="icon text-3xl">{icon}</div>
-            <div className="title text-xl lg:mt-6">{title}</div>
-            <div className="count text-sm lg:mt-4">{count}</div>
+            <div className="icon text-4xl">{icon}</div>
+            <div className="title text-3xl font-bold lg:mt-3">{title}</div>
+            <div style={{backgroundColor:'red',color:'white'}} className="count  lg:h-12 lg:ps-4 lg:pe-4 text-md font-semibold lg:mt-4 rounded-3xl">
+                <NavLink className="w-full h-full">
+                    <div className="w-full h-full flex justify-between items-center">
+                    {count}
+            <GrLinkNext className="text-xl"/>
+                    </div>
+                </NavLink>
+            </div>
         </div>
     );
 }

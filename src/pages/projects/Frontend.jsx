@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Footer() {
+function Frontend() {
     return (
         <></>
     )
 }
 
-export default Footer
+export default Frontend

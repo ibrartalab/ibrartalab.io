@@ -12,7 +12,7 @@ function Hero() {
           {/* background image used */}
         </div>
         <div className="lg:mt-2">
-          <h1 className="text-left lg:ml-8 ">Ibrar Khan</h1>
+          <h1 className="text-left lg:ml-8 font-bold">Ibrar Khan</h1>
         </div>
         <div className="text-md lg:w-80 lg:ml-8 text-left font-semibold">
           <p>

@@ -33,7 +33,7 @@ h1 {
 }
 
 .profile-img {
-  background-image: url("./assets/profile.jpg");
+  background-image: url("./assets/profile2.png");
   object-fit: cover;
   border-radius: 50%;
   background-size: cover;
@@ -52,14 +52,6 @@ h1 {
 }
 .top-skills-list ul li {
   list-style: circle;
-}
-
-
-.round-circle {
-  background-color:gray;
-}
-.talks-btn {
-  background-color: #343a40;
 }
 
 

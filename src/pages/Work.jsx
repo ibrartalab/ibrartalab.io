@@ -7,7 +7,7 @@ function Work() {
       <div className="text-center mt-20">
         <h3 className="text-2xl mt-10">Experience</h3>
       </div>
-      <div className="flex justify-evenly">
+      <div className="flex justify-evenly lg:">
         <Experience
           imgName={"DiceAnalytics"}
           companyName={"Dice Analytics"}
@@ -37,7 +37,7 @@ function Work() {
           />
         </Experience>
 
-        <div className="flex lg:flex-col">
+        <div className="flex lg:flex-col justify-between">
           <Experience
             imgName={"tata"}
             companyName={"Tata Group"}
@@ -46,18 +46,20 @@ function Work() {
             <ExperienceList
               title={"Data Analyst"}
               duration={"Internship"}
+              location={'Remote'}
               skills={"Microsoft Power BI and Microsoft Excel"}
-              className={"border-none lg:ps-7 lg:mt-4"}
-              nestedClass={""}
+              className={"border-none  lg:mt-4"}
+             
             />
           </Experience>
           <Experience imgName={"pwc"} companyName={"PwC"} time={"(1 month)"}>
             <ExperienceList
               title={"BI Analyst"}
               duration={"Internship"}
+              location={'Remote'}
               skills={"Microsoft Power BI and Microsoft Excel"}
-              className={"border-none lg:ps-7 lg:mt-4"}
-              nestedClass={""}
+              className={"border-none lg:mt-4"}
+              
             />
           </Experience>
         </div>
@@ -69,14 +71,14 @@ function Work() {
 //Experice for Each company
 function Experience({ imgName, companyName, time, children }) {
   return (
-    <div className="exp-wrapper text-center lg:mt-8">
-      <div className="lg:w-max lg:h-20 m-auto flex justify-center items-center ">
+    <div className="exp-wrapper text-left lg:mt-8 bg-white text-black rounded-3xl w-80 h-max">
+      <div className="lg:w-max lg:h-20 flex  items-center lg:ps-4 ">
         <img
           src={`/src/assets/${imgName}.png`}
           alt="company"
           className="lg:w-14 lg:h-14"
         />
-        <span>
+        <span className="text-lg font-semibold">
           {companyName} <span className="text-sm">{time}</span>
         </span>
       </div>
@@ -97,10 +99,10 @@ function ExperienceList({
   return (
     <>
       <div
-        className={`lg:w-44 border-l-2 border-neutral-900 lg:h-40 lg:m-auto relative ${className}`}
+        className={`lg:w-44 border-l-2 border-red-500 lg:h-40 lg:ml-4 relative ${className}`}
       >
         <div className="exp-list lg:w-max lg:h-40  m-auto lg:ps-4 absolute lg:-top-7 ">
-          <div className={`text-md font-bold text-start ${nestedClass}`}>
+          <div className={`text-md font-bold text-start  ${nestedClass}`}>
             {title}
           </div>
           <div className="text-left text-sm">{duration}</div>
@@ -118,7 +120,7 @@ function ExperienceList({
 //Circle icon from career break
 function CircleIcon() {
   return (
-    <div className=" round-circle w-3 h-3 rounded-full bg-black lg:ml-l lg:mb-2 lg:mt-2 "></div>
+    <div className=" round-circle w-3 h-3 rounded-full bg-gray-400  lg:ml-3 lg:mb-2 lg:mt-2 "></div>
   );
 }
 

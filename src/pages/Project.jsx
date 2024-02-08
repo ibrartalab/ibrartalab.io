@@ -11,7 +11,7 @@ function Project() {
                 {/* <div className="text-center text-2xl lg:mt-8">
                     <h2>Projects</h2>
                 </div> */}
-                <div className="flex justify-evenly  items-center lg:ps-32 lg:pe-20 lg:mt-12">
+                <div className="flex justify-evenly  items-center lg:ps-20 lg:pe-20 lg:mt-12">
                     <ProjectContainer
                         icon={<GoCodeSquare />}
                         title={"Front-End Development"}

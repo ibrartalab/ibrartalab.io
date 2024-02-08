@@ -4,8 +4,8 @@ import { IoDiamondSharp } from "react-icons/io5";
 function Work() {
   return (
     <>
-      <div className="text-center mt-20">
-        <h3 className="text-2xl mt-10">Experience</h3>
+      <div className="text-left lg:ps-32 ">
+        <h3 className="text-2xl font-bold mt-10">Experience</h3>
       </div>
       <div className="flex justify-evenly lg:">
         <Experience
@@ -99,7 +99,7 @@ function ExperienceList({
   return (
     <>
       <div
-        className={`lg:w-44 border-l-2 border-red-500 lg:h-40 lg:ml-4 relative ${className}`}
+        className={`lg:w-44 border-l-2 border-gray-400 lg:h-40 lg:ml-4 relative ${className}`}
       >
         <div className="exp-list lg:w-max lg:h-40  m-auto lg:ps-4 absolute lg:-top-7 ">
           <div className={`text-md font-bold text-start  ${nestedClass}`}>
@@ -120,7 +120,7 @@ function ExperienceList({
 //Circle icon from career break
 function CircleIcon() {
   return (
-    <div className=" round-circle w-3 h-3 rounded-full bg-gray-400  lg:ml-3 lg:mb-2 lg:mt-2 "></div>
+    <div className=" round-circle w-3 h-3 rounded-full  lg:ml-3 lg:mb-2 lg:mt-2 "></div>
   );
 }
 

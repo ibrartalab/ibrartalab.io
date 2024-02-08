@@ -53,5 +53,9 @@ h1 {
 .top-skills-list ul li {
   list-style: circle;
 }
-
+.round-circle{
+  background-color: red;
+  border-top-right-radius: 2px;
+  rotate: 45deg;
+}
 

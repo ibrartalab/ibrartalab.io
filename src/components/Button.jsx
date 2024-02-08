@@ -1,11 +1,11 @@
 
 
-function Button({ width = '80px', height = '30px', className, handler, mouseMove,mouseOut, children }) {
+function Button({className, handler, mouseMove,mouseOut, children }) {
     return (
 
         <button
         id="btn"
-            style={{ width: width, height: height,backgroundColor:'#dac3e8',color:'#6247aa'}}
+            style={{backgroundColor:'black',color:'white'}}
             className={className}
             onClick={handler}
             onMouseOver={mouseMove}

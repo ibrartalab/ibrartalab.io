@@ -103,12 +103,12 @@ function ExperienceList({
           <div className={`text-md font-bold text-start ${nestedClass}`}>
             {title}
           </div>
-          <p className="text-left text-sm">{duration}</p>
-          <p className="text-left text-sm">{location}</p>
-          <p className="text-center flex justify-normal items-center gap-2 text-sm">
+          <div className="text-left text-sm">{duration}</div>
+          <div className="text-left text-sm">{location}</div>
+          <div className="text-center flex justify-normal items-center gap-2 text-sm">
             <IoDiamondSharp className="lg:mt-4 text-slate-800" />
             <div className="lg:mt-4">{skills}</div>
-          </p>
+          </div>
         </div>
       </div>
     </>

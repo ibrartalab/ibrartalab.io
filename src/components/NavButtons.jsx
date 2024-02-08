@@ -1,21 +1,55 @@
-import { Link } from "react-router-dom"
+import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 
 function NavButtons() {
-    return (
-        <>
-        <div className="flex">
-            <div className="page-btn lg:w-20 lg:h-8 lg:mt-6 lg:ml-6 lg:p-1 rounded-md">
-              <Link to={'/'}>All</Link>
-            </div>
-            <div className="page-btn lg:w-20 lg:h-8 lg:mt-6 lg:ml-6 lg:p-1 rounded-md ">
-              <Link to={'/about'}>About</Link>
-            </div>
-            <div className="page-btn lg:w-20 lg:h-8 lg:mt-6 lg:ml-6 lg:p-1 rounded-md ">
-              <Link>Projects</Link>
-            </div>
-          </div>
-        </>
-    )
+  const [color,setColor] = useState(false)
+
+  return (
+    <>
+      <div className="flex lg:mt-12 lg:gap-6 lg:ml-10">
+       
+        <NavLink to={"/"} 
+        style={({ isActive}) => {
+          return {
+            fontWeight: isActive ? "bold" : "",
+            color: isActive ? "white" : "gray",
+            backgroundColor:isActive ? 'red' : '',
+            border:isActive ? '' : '1px solid gray',
+          };
+        }}
+        className="my-link lg:w-20 lg:h-12 text-center lg:p-3 rounded-lg font-semibold"
+        >
+          All
+        </NavLink>
+        <NavLink to={"/about"} 
+        style={({ isActive}) => {
+          return {
+            fontWeight: isActive ? "bold" : "",
+            color: isActive ? "white" : "gray",
+            backgroundColor:isActive ? 'red' : '',
+            border:isActive ? '' : '1px solid gray',
+          };
+        }}
+        className="my-link lg:w-22 lg:h-12 text-center lg:p-3 rounded-lg font-semibold"
+        >
+          Backend
+        </NavLink>
+        <NavLink to={"/frontend"} 
+        style={({ isActive}) => {
+          return {
+            fontWeight: isActive ? "bold" : "",
+            color: isActive ? "white" : "gray",
+            backgroundColor:isActive ? 'red' : '',
+            border:isActive ? '' : '1px solid gray',
+          };
+        }}
+        className="my-link lg:w-32 lg:h-12 text-center lg:p-3 rounded-lg font-semibold"
+        >
+          Frontend
+        </NavLink>
+      </div>
+    </>
+  );
 }
 
-export default NavButtons
+export default NavButtons;

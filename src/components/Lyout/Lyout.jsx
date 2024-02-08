@@ -5,7 +5,7 @@ import NavButtons from '../NavButtons'
 function Lyout({children}) {
     return (
         <div className='flex'>
-            <div style={{height:'100vh'}} className=''><Hero/></div>
+            <div style={{height:'100vh',color:'black'}} className='bg-white'><Hero/></div>
             <div>
             <NavButtons/>
             <div>{children}</div>

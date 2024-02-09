@@ -1,5 +1,6 @@
 {
-  "name": "ibrartalab.io",
+  "homepage": "https://ibrartalab.github.io/ibrartalabsite",
+  "name": "ibrartalab",
   "private": true,
   "version": "0.0.0",
   "type": "module",
